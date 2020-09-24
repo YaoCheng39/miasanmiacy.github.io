@@ -2575,6 +2575,203 @@ div.fancybox .image-caption {
 div.fancybox .image-caption:empty {
   display: none;
 }
+.darkmode-layer {
+  display: none;
+}
+.darkmode-toggle {
+  z-index: 1001;
+}
+.darkmode-toggle:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  content: '\f186';
+  color: #fff;
+}
+.darkmode-background {
+  z-index: -1000000 !important;
+}
+.darkmode--activated {
+  --color-site-bg: #222;
+  --color-site-inner: #eee;
+  --color-site-footer: #aaa;
+  --color-card: #333;
+  --color-text: #eee;
+  --color-block: #3a3a3a;
+  --color-codeblock: #343a3c;
+  --color-inlinecode: #d56d28;
+  --color-h1: #eee;
+  --color-h2: #eee;
+  --color-h3: #ddd;
+  --color-h4: #ddd;
+  --color-h5: #ddd;
+  --color-h6: #ddd;
+  --color-p: #bbb;
+  --color-list: #aaa;
+  --color-list-hl: #69dfc4;
+  --color-meta: #888;
+  --color-link: #888;
+}
+.darkmode--activated .l_body {
+  background-color: var(--color-site-bg) !important;
+}
+.darkmode--activated img {
+  filter: brightness(70%) !important;
+}
+.darkmode--activated .lazyload {
+  filter: brightness(70%) !important;
+}
+.darkmode--activated .pdf {
+  filter: brightness(70%) !important;
+}
+.darkmode--activated .l_header .wrapper .title {
+  color: var(--color-meta);
+}
+.darkmode--activated .l_header ul.nav-list-h>li>a,
+.darkmode--activated ul.list-v >li>a {
+  color: var(--color-list);
+}
+.darkmode--activated .blur {
+  background: var(--color-site-bg) !important;
+}
+.darkmode--activated .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+.darkmode--activated .l_main .article .prev-next>a {
+  background: var(--color-block);
+}
+.darkmode--activated .l_main .article .prev-next>a:hover {
+  background: var(--color-card);
+}
+.darkmode--activated .article blockquote {
+  background: var(--color-block);
+}
+.darkmode--activated .article-title a {
+  color: var(--color-h1);
+}
+.darkmode--activated details>summary {
+  color: var(--color-p);
+  background: var(--color-site-bg);
+}
+.darkmode--activated details {
+  border: 1px solid var(--color-site-bg);
+  background: var(--color-site-bg);
+}
+.darkmode--activated #u-search .modal {
+  background: var(--color-card) !important;
+}
+.darkmode--activated #u-search .modal-header {
+  background: var(--color-card) !important;
+}
+.darkmode--activated #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+.darkmode--activated #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+@media screen and (max-width: 500px) {
+  .darkmode--activated .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
+.darkmode--activated .widget.blogger .content .social-wrapper a.social:hover {
+  background: var(--color-card);
+}
+.darkmode--activated .content {
+  color: var(--color-p);
+}
+.darkmode--activated .note {
+  background: var(--color-block) !important;
+}
+.darkmode--activated div.tabs ul.nav-tabs li.tab.active a {
+  color: var(--color-p);
+  background: var(--color-card);
+}
+.darkmode--activated kbd {
+  background: var(--color-block) !important;
+}
+.darkmode--activated .cover-wrapper.dock .menu .list-h a:hover,
+.darkmode--activated .cover-wrapper.featured .menu .list-h a:hover,
+.darkmode--activated .cover-wrapper.focus .menu .list-h a:hover {
+  color: var(--color-text) !important;
+}
+.darkmode--activated .gutter {
+  background: var(--color-card) !important;
+  background-color: var(--color-card) !important;
+}
+.darkmode--activated .highlight figcaption {
+  background-color: #21252b;
+}
+.darkmode--activated .highlight pre .line,
+.darkmode--activated .highlight pre .params {
+  color: rgba(158,142,142,0.9);
+}
+.darkmode--activated *:not(.highlight) >table tr {
+  background-color: var(--color-card);
+}
+.darkmode--activated *:not(.highlight) >table th {
+  background: var(--color-site-bg);
+}
+.darkmode--activated *:not(.highlight) table td,
+.darkmode--activated *:not(.highlight) table th {
+  border-color: var(--color-site-bg);
+}
+.darkmode--activated *:not(.highlight) >table tr:hover {
+  background: var(--color-codeblock);
+}
+.darkmode--activated .timenode .highlight {
+  border-color: var(--color-site-bg) !important;
+}
+.darkmode--activated blockquote p {
+  color: var(--color-p);
+}
+.darkmode--activated #archive-page .archive .all-tags ul li span {
+  color: var(--color-text);
+  background: #6f6f72;
+}
+.darkmode--activated #valine_container button {
+  background-color: var(--color-block) !important;
+}
+.darkmode--activated #valine_container .vcards .vcontent.expand:before {
+  background: none !important;
+}
+.darkmode--activated #valine_container .vcards .vcontent.expand:after {
+  background: #393c40 !important;
+}
+.darkmode--activated .v[data-class=v] code,
+.darkmode--activated .v[data-class=v] pre {
+  background-color: #332828 !important;
+}
+.darkmode--activated .darkmode-toggle {
+  z-index: 1001;
+}
+.darkmode--activated .darkmode-toggle:before {
+  content: '\f185';
+  transform: scale(1.4);
+  color: #000;
+}
+.darkmode--activated .highlight {
+  background: var(--color-site-bg) !important;
+}
+.darkmode--activated .highlight figcaption {
+  color: #847a7d !important;
+  background: var(--color-site-bg) !important;
+}
+.darkmode--activated .highlight pre .comment {
+  color: #847a7d !important;
+}
+.darkmode--activated .list-h i {
+  color: #b04213 !important;
+}
+.darkmode--activated #comments p {
+  color: var(--color-p);
+}
+.darkmode--activated .gutter {
+  background-color: var(--color-site-bg) !important;
+}
+.darkmode--activated .timeline-item:before,
+.darkmode--activated hr {
+  background-color: var(--color-block);
+}
 #nprogress {
   pointer-events: none;
 }
@@ -3037,6 +3234,109 @@ article#comments #valine_container .vinput {
 }
 article#comments #valine_container p {
   color: var(--color-text);
+}
+p,
+input,
+pre>span,
+textarea,
+cursor: $text,
+text !important,
+.fancybox-container .fancybox-stage {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-out.png"), zoom-out !important;
+}
+.fancybox a,
+.fancybox-can-zoomIn .fancybox-content {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/zoom-in.png"), zoom-in !important;
+}
+span.btn>a:not([href]):hover,
+.fancybox-button[disabled],
+.fancybox-button[disabled]:hover,
+.gt-container .gt-btn.is--disable {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/circle.png"), not-allowed !important;
+}
+html,
+a:not([href]),
+a:not([href]) p,
+button[disabled],
+html input[disabled],
+.article .widget,
+.l_body .post section.meta .new-meta-box .new-meta-item .notlink,
+ul.list-v.rightmenu a,
+span.btn a:not([href]),
+div.tabs ul.nav-tabs li.tab.active a,
+article#comments #valine_container .vcards .vhead span.vnick,
+kbd,
+.a > p,
+.not-select,
+.not-select p,
+.MiniValine *,
+.aplayer .aplayer-info .aplayer-music,
+.gt-container a.is--active,
+.fix-cursor-default {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png"), default !important;
+}
+a,
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit],
+table::-webkit-scrollbar-thumb,
+scrollbar::-webkit-scrollbar-thumb,
+.cover-wrapper .cover .scroll-down,
+ul.list-v.rightmenu li.music a.nav.volume .aplayer-volume-bar,
+#u-search .modal .modal-header .btn-close,
+#u-search .modal .modal-footer .nav,
+article .checkbox input,
+details summary,
+.article a.link-card,
+div.tabs ul.nav-tabs li.tab a,
+.btn-copy,
+.fancybox-can-pan .fancybox-content,
+.fancybox-can-swipe .fancybox-content,
+.waves-effect,
+a.result.search-result-fix,
+.tag > p,
+.prev > p,
+.next > p,
+.author > p,
+.list-h > a > p,
+.category > a > p,
+.friend-right p,
+.v[data-class=v] a,
+.v[data-class=v] .vbtn,
+.v[data-class=v] .vicon,
+.v[data-class=v] .vcards .vcard .vhead .vnick,
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat,
+.v[data-class=v] .vwrap .vemojis i,
+.v[data-class=v] .vcards .vcard .vcontent.expand,
+.aplayer .aplayer-pic,
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon,
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap,
+.aplayer .aplayer-list ol li,
+.aplayer .aplayer-list ol li .aplayer-list-author,
+.aplayer .aplayer-list ol li .aplayer-list-index,
+.waves-button,
+.waves-button-input,
+.waves-button:hover,
+.waves-button:visited,
+.fancybox-button,
+.MiniValine .vbtn,
+.MiniValine .vcancel-comment-reply,
+.MiniValine .vcancel-comment-reply svg,
+.MiniValine .vlist .vcard .vcomment-body .vat,
+.MiniValine .vlist .vcard .vcomment-body .vhead .vname,
+.MiniValine .vinputs-area .btn-wrap .vfunction-btn svg,
+.MiniValine .vinputs-area .vextra-area .vsmile-icons img,
+.MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment a,
+.gt-container .gt-btn,
+.gt-container .gt-user-inner,
+.gt-container .gt-avatar-github,
+.gt-container .gt-popup .gt-action,
+.gt-container .gt-comment-like:hover,
+.gt-container .gt-comment-edit:hover,
+.gt-container .gt-comment-reply:hover,
+.fix-cursor-pointer {
+  cursor: url("https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png"), pointer !important;
 }
 article#arc,
 article#cat,
@@ -4725,6 +5025,30 @@ img.lazyload:not(.placeholder):not(.loaded) {
 }
 img.lazyload:not(.placeholder).loaded {
   filter: none;
+}
+.tagred {
+  background: #feecf0 !important;
+  color: #cc0f35 !important;
+}
+.tagyellow {
+  background: #f4e9ff !important;
+  color: #8a51c0 !important;
+}
+.tagblue {
+  background: #eef3fc !important;
+  color: #2160c4 !important;
+}
+.taggreen {
+  background: #ebfffc !important;
+  color: #00947e !important;
+}
+.tagpurple {
+  background: #f4e9ff !important;
+  color: #8a51c0 !important;
+}
+.taggrown {
+  background: #fffbeb !important;
+  color: #947600 !important;
 }
 .md >p {
   padding-top: 4px;
