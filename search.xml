@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>类型转换</title>
+      <link href="2020/09/25/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/"/>
+      <url>2020/09/25/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h1><ul><li>将图像从一种类型转换成另一种类型<ul><li>彩色转灰度<br><img src="https://static01.imgkr.com/temp/36a6ac3cffb1476797c930eede753594.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/36a6ac3cffb1476797c930eede753594.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li><li>BGR转RGB<br><img src="https://static01.imgkr.com/temp/3ac8f36fdd7145de880454da5b27d775.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/3ac8f36fdd7145de880454da5b27d775.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li><li>灰度转BGR<br><img src="https://static01.imgkr.com/temp/c6b36b0ddae144e4a652a3906ce5630a.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/c6b36b0ddae144e4a652a3906ce5630a.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li><li>……  </li></ul></li></ul><p>1.彩色图像转灰度图像</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">a = cv2.imread(<span class="string">r&#x27;D:\Chorme\lena512color.tiff&#x27;</span>)</span><br><span class="line">b = cv2.cvtColor(a,cv2.COLOR_BGR2GRAY)</span><br><span class="line">cv2.imshow(<span class="string">&quot;lenaColor&quot;</span>,a)</span><br><span class="line">cv3.imshow(<span class="string">&quot;leanGray&quot;</span>,b)</span><br><span class="line">cv2.waitKey()</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure><p>2.BGR图像转RGB图像</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">a = cv2.imread(<span class="string">r&#x27;D:\Chorme\lena512color.tiff&#x27;</span>)</span><br><span class="line">b = cv2.cvtColor(a,cv2.COLOR_BGR2RGB)</span><br><span class="line">cv2.imshow(<span class="string">&quot;lenaBGR&quot;</span>,a)</span><br><span class="line">cv3.imshow(<span class="string">&quot;leanRGB&quot;</span>,b)</span><br><span class="line">cv2.waitKey()</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure><p>3.灰度图像转BGR图像</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">a = cv2.imread(<span class="string">r&#x27;D:\Chorme\lena512color.tiff&#x27;</span>)</span><br><span class="line">b = cv2.cvtColor(a,cv2.COLOR_GRAY2BGR)</span><br><span class="line">cv2.imshow(<span class="string">&quot;lenaGRAY&quot;</span>,a)</span><br><span class="line">cv3.imshow(<span class="string">&quot;leanBGR&quot;</span>,b)</span><br><span class="line">cv2.waitKey()</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> opencv </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> opencv </tag>
+            
+            <tag> 图像处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>图像运算</title>
       <link href="2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/"/>
       <url>2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/</url>
