@@ -4,25 +4,25 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="2020/09/23/test/"/>
-      <url>2020/09/23/test/</url>
+      <title>图像处理基础</title>
+      <link href="2020/09/25/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/"/>
+      <url>2020/09/25/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
       
-        <content type="html"><![CDATA[<p>test</p>]]></content>
+        <content type="html"><![CDATA[<p>##图像处理基础</p><ul><li>图像处理入门基础<ul><li>图像分类<ul><li>二值图像</li><li>灰度图像</li><li>RGB图像  (在OpenCV中，彩色图像的表示顺序为BGR)</li></ul></li></ul></li></ul>]]></content>
       
       
       <categories>
           
-          <category> 技术 </category>
+          <category> opencv </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Markdown </tag>
+            <tag> opencv </tag>
             
-            <tag> Python </tag>
+            <tag> 图像处理 </tag>
             
         </tags>
       
