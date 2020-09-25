@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>图像运算</title>
+      <link href="2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/"/>
+      <url>2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="图像运算"><a href="#图像运算" class="headerlink" title="图像运算"></a>图像运算</h1><ul><li><p>图像加法</p><ul><li>Numpy加法<ul><li>取模加法<br>&ensp; 运算方式：结果 = 图像1 + 图像2<br>&ensp; 取模加法的运算方式如下图所示：<br><img src="https://static01.imgkr.com/temp/a580ffb8b7ae4a848a3f409387984aae.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/a580ffb8b7ae4a848a3f409387984aae.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li></ul></li><li>OpenCV加法<ul><li>饱和运算<br>&ensp; 运算方式：结果 = cv2.add(图像1，图像2)<br>&ensp; 饱和运算方式如下图所示:<br><img src="https://static01.imgkr.com/temp/b33726e72741472a82c04b7e16483dd7.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/b33726e72741472a82c04b7e16483dd7.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li></ul></li><li>Numpy加法与OpenCV加法比较<br><img src="https://static01.imgkr.com/temp/887ddc30b773448e9775a7caf04619c2.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/887ddc30b773448e9775a7caf04619c2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>产生此结果的原因，对于OpenCV加法，如果像素点的值相加超过255即取255，即为白色。而对于Numpy加法如果像素点的值相加超过255即取模，这样会比原像素点变得更黑。<blockquote><p>参与运算的图像大小、类型必须一致。</p></blockquote><pre><code class="python">import cv2import numpy as npa = cv2.imread(r&#39;D:Chorme\lena512.bmp&#39;)b = aresult1 = a+bresult = cv2.add(a,b)cv2.imshow(&quot;original&quot;,a)cv2.imshow(&quot;result1&quot;,result1)cv2.imshow(&quot;result2&quot;,result2)cv2.waitKey()cv2.destroyAllWindows()</code></pre></li></ul></li><li><p>图像融合</p><ul><li>将2张或2张以上的图像信息融合到一张图像上。<br>图像融合的作用如下图所示：<br><img src="https://static01.imgkr.com/temp/7c8fb405f5ae467285be1f213920b646.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/7c8fb405f5ae467285be1f213920b646.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li><li>结果图像 = 图像1 * 系数1 + 图像2 * 系数2 + 亮度调节量</li><li>所用到的函数 addWeighted()<br><code>dst = cv2.addWeighted(src1,alpha,src2,beta,gamma)</code><br>(注意！！！！参数gamma不能省略)</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> opencv </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> opencv </tag>
+            
+            <tag> 图像处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>图像处理基础</title>
       <link href="2020/09/25/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/"/>
       <url>2020/09/25/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>

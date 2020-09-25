@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -19,7 +17,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2020/9 - 印第安的老斑鸠</title>
+  <title>图像运算 - 印第安的老斑鸠</title>
+  
+    <meta name="keywords" content="opencv,图像处理">
   
 
   
@@ -329,7 +329,7 @@
   
     
     
-        <div class='cover-wrapper  blank' style="display: none;">
+        <div class='cover-wrapper post blank' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg"></div>
           
@@ -349,8 +349,8 @@
  
  
 <div id="pjax-data" style="display: none"> 
-  <div id="pjax-ispage">false</div> 
-  <div id="pjax-pageTitle"></div> 
+  <div id="pjax-ispage">true</div> 
+  <div id="pjax-pageTitle">图像运算</div> 
   <div id="pjax-enable-cover">true</div> 
   <div id="pjax-comment-path"></div> 
   <div id="pjax-comment-placeholder"></div> 
@@ -380,96 +380,231 @@
         
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
-      
+    
+    
+      <h1 class="title">
+        图像运算
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="https://github.com/miasanmiacy/CDN/blob/master/wz.png?raw=true">
+    <p>CY Website</p>
+  </a>
+</div>
+
           
         
           
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/">
-        图像运算
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        图像运算
-图像加法
-
-Numpy加法
-取模加法&ensp; 运算方式：结果 = 图像1 + 图像2&ensp; 取模加法的运算方式如下图所示：
-
-
-OpenCV加法
-饱和运算&ensp; 运算方式：结果 = cv2.add(图像1，图像2)&ensp; 饱和运算方式如下图所示:
-
-
-Numpy加法与OpenCV加法比较产生此结果的原因，对于OpenCV加法，如果像素点的值相加超过255即取2...
-      
-    
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/opencv/">opencv</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2020-09-25</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Sep 25, 2020</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/opencv/">opencv</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="图像运算" data-path="/2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>292 words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>1 min</p>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  <h1 id="图像运算"><a href="#图像运算" class="headerlink" title="图像运算"></a>图像运算</h1><ul>
+<li><p>图像加法</p>
+<ul>
+<li>Numpy加法<ul>
+<li>取模加法<br>&ensp; 运算方式：结果 = 图像1 + 图像2<br>&ensp; 取模加法的运算方式如下图所示：<br><img src="https://static01.imgkr.com/temp/a580ffb8b7ae4a848a3f409387984aae.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/a580ffb8b7ae4a848a3f409387984aae.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li>
+</ul>
+</li>
+<li>OpenCV加法<ul>
+<li>饱和运算<br>&ensp; 运算方式：结果 = cv2.add(图像1，图像2)<br>&ensp; 饱和运算方式如下图所示:<br><img src="https://static01.imgkr.com/temp/b33726e72741472a82c04b7e16483dd7.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/b33726e72741472a82c04b7e16483dd7.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li>
+</ul>
+</li>
+<li>Numpy加法与OpenCV加法比较<br><img src="https://static01.imgkr.com/temp/887ddc30b773448e9775a7caf04619c2.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/887ddc30b773448e9775a7caf04619c2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>产生此结果的原因，对于OpenCV加法，如果像素点的值相加超过255即取255，即为白色。而对于Numpy加法如果像素点的值相加超过255即取模，这样会比原像素点变得更黑。<blockquote>
+<p>参与运算的图像大小、类型必须一致。</p>
+</blockquote>
+<pre><code class="python">import cv2
+import numpy as np
+a = cv2.imread(r&#39;D:Chorme\lena512.bmp&#39;)
+b = a
+result1 = a+b
+result = cv2.add(a,b)
+cv2.imshow(&quot;original&quot;,a)
+cv2.imshow(&quot;result1&quot;,result1)
+cv2.imshow(&quot;result2&quot;,result2)
+cv2.waitKey()
+cv2.destroyAllWindows()</code></pre>
+</li>
+</ul>
+</li>
+<li><p>图像融合</p>
+<ul>
+<li>将2张或2张以上的图像信息融合到一张图像上。<br>图像融合的作用如下图所示：<br><img src="https://static01.imgkr.com/temp/7c8fb405f5ae467285be1f213920b646.png" class="lazyload" data-srcset="https://static01.imgkr.com/temp/7c8fb405f5ae467285be1f213920b646.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></li>
+<li>结果图像 = 图像1 * 系数1 + 图像2 * 系数2 + 亮度调节量</li>
+<li>所用到的函数 addWeighted()<br><code>dst = cv2.addWeighted(src1,alpha,src2,beta,gamma)</code><br>(注意！！！！参数gamma不能省略)</li>
+</ul>
+</li>
+</ul>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/'>
-        
-            阅读全文
-          </a>
-        </div>
+      
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-25T16:38:00+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Sep 25, 2020</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/09/25/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/">
-        图像处理基础
-      </a>
-    </h2>
-  
-  <div class='md'>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/opencv/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>opencv</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>图像处理</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        图像处理基础
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/&title=图像运算 - 印第安的老斑鸠&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/&title=图像运算 - 印第安的老斑鸠&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2020/09/25/%E5%9B%BE%E5%83%8F%E8%BF%90%E7%AE%97/&title=图像运算 - 印第安的老斑鸠&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2020/09/25/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/'>
+          <p class='title'>图像处理基础<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>图像处理基础
 图像处理入门基础
 
 图像分类
@@ -482,45 +617,30 @@ RGB图像  (在OpenCV中，彩色图像的表示顺序为BGR)
 
 像素处理
 
-读取像素p = img[88,132]彩色图像123blue = img[88,132,0]green = img[88,132,1]red = img[88,132,2]
-修改像素值img[88,132] = 255彩色图像  123456...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-09-25</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/opencv/">opencv</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/09/25/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/'>
-        
-            阅读全文
-          </a>
-        </div>
+读取像素p = img[88,132]彩色...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -528,208 +648,28 @@ RGB图像  (在OpenCV中，彩色图像的表示顺序为BGR)
     
     
 
-<section class="widget text shadow desktop">
-  
-  <header>
-    
-      <i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i><span class='name'>公告</span>
-    
-  </header>
 
 
-  <div class='content'>
-    
-      <p>  <i class="fal fa-cactus"></i> 暗黑模式已上线，为夜间阅读的朋友提供最佳环境 ~</p>
-
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
         
-          <li><a class="flat-box"
-            title="/categories/opencv/" href="/categories/opencv/"
-            id="categoriesopencv"
-            ><div class='name'>opencv</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/opencv/" style="font-size: 14px; color: #999">opencv</a> <a href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" style="font-size: 14px; color: #999">图像处理</a>
-    </div>
-  </section>
-
-
-  
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>2 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2020/01/01'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>713 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="lc-uv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Fri Sep 25 2020 16:38:12 GMT+0800 (GMT+08:00)</div>
-            <div id="last-update-show">2020-09-25 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2020-09-25 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
 
   
 
 
 </aside>
+
 
 
       </div>
