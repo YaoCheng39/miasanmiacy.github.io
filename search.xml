@@ -4,6 +4,71 @@
   
     
     <entry>
+      <title>Tensors Explained</title>
+      <link href="2020/10/12/Tensors-Explained/"/>
+      <url>2020/10/12/Tensors-Explained/</url>
+      
+        <content type="html"><![CDATA[<p>#张量</p><ul><li>什么是张量</li></ul><blockquote><p>A tensor is the primary data structure used by neural networks.</p></blockquote><blockquote><p>张量是多维数组</p></blockquote><ul><li><p>张量的三个基本属性</p><ul><li>Rank (秩，张量的秩是指张量中存在的维数)</li><li>Axes (轴)</li><li>Shape (形状)</li></ul></li><li><p>对三个基本属性的解释</p><ul><li><p>Rank  </p><blockquote><p>The rank of a tensor refers to the number of dimensions present within the tensor.  </p></blockquote><p>当我们知道一个张量的秩时可以确定需要多少索引来表示张量中特定的元素。</p></li><li><p>Axes</p><blockquote><p>An axis of a tensor is a specific dimension of a tensor. </p></blockquote><p>如果我们有一个秩为2的张量，那就意味着这个张量的维度为2，且轴的个数为2。</p><p>如果我们知道了每个轴的轴长那么就可以确定该张量的形状。</p></li><li><p>Shape</p><blockquote><p>The shape of a tensor gives us the length of each axis of the tensor.</p></blockquote><pre><code class="python">&gt; dd = [[1,2,3],[4,5,6],[7,8,9]]&gt; t = torch.tensor(dd)&gt; ttensor([[1,2,3],[4,5,6],[7,8,9]])&gt; type(t)torch.Tensor# Now, we have a torch.Tensor object, and so we can ask to see the tensor&#39;s shape:&gt; t.shapetorch.Size([3,3])</code></pre></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> pytorch基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> pytorch </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Multivariate Linear Regression</title>
+      <link href="2020/09/25/Multivariate-Linear-Regression/"/>
+      <url>2020/09/25/Multivariate-Linear-Regression/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>几何变换</title>
+      <link href="2020/09/25/%E5%87%A0%E4%BD%95%E5%8F%98%E6%8D%A2/"/>
+      <url>2020/09/25/%E5%87%A0%E4%BD%95%E5%8F%98%E6%8D%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="几何变换"><a href="#几何变换" class="headerlink" title="几何变换"></a>几何变换</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> opencv </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> opencv </tag>
+            
+            <tag> 图像处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>类型转换</title>
       <link href="2020/09/25/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/"/>
       <url>2020/09/25/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</url>
